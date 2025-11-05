@@ -1,20 +1,20 @@
- Technical Requirements Guide for Immersive Media Prototypes
+# Technical Requirements Guide for Immersive Media Prototypes
 
- Table of Contents
+## Table of Contents
 
-1. [Introduction](introduction)
-2. [Getting Started](getting-started)
-3. [Platform Requirements](platform-requirements)
-4. [Tools & Software](tools--software)
-5. [APIs & Services](apis--services)
-6. [Technical Architecture](technical-architecture)
-7. [Dependencies & Constraints](dependencies--constraints)
-8. [Project Type Quick Tips](project-type-quick-tips)
-9. [Template Summary](template-summary)
-10. [Resources](resources)
+1. [Introduction](#introduction)
+2. [Getting Started](#getting-started)
+3. [Platform Requirements](#platform-requirements)
+4. [Tools & Software](#tools--software)
+5. [APIs & Services](#apis--services)
+6. [Technical Architecture](#technical-architecture)
+7. [Dependencies & Constraints](#dependencies--constraints)
+8. [Project Type Quick Tips](#project-type-quick-tips)
+9. [Template Summary](#template-summary)
+10. [Resources](#resources)
 
 
- Introduction
+## Introduction
 
 Documenting technical requirements helps you understand what's needed to build your prototype and communicate effectively with developers or technical team members. This guide focuses specifically on technical requirements—platforms, tools, and APIs—to help you scope your prototype accurately.
 
@@ -39,17 +39,17 @@ How to use this guide:
 5. Use the Template Summary at the end to consolidate your answers
 
 
- Getting Started
+## Getting Started
 
 Before diving into technical requirements, take a moment to identify your project basics.
 
- Project Identification
+### Project Identification
 
 Project Name: `[Your project name here]`
 
 Brief Description: `[1-2 sentences describing what your project does]`
 
- Project Type Selection
+### Project Type Selection
 
 Choose the type that best matches your project (you can select multiple if applicable):
 
@@ -68,11 +68,11 @@ Choose the type that best matches your project (you can select multiple if appli
 > Tip: Once you've identified your project type, check the Project Type Quick Tips section (Section 8) for guidance on which sections to prioritize.
 
 
- Platform Requirements
+## Platform Requirements
 
 Your platform choice determines what hardware and software capabilities you can use, what APIs are available, and how users will access your project.
 
- Why Platform Choice Matters
+### Why Platform Choice Matters
 
 Different platforms have different:
 - Performance capabilities - Processing power, graphics capabilities
@@ -80,16 +80,16 @@ Different platforms have different:
 - Distribution methods - How users get your project (app stores, web, etc.)
 - Development requirements - What tools and environments you need
 
- Common Platform Options
+### Common Platform Options
 
-Mobile: iOS, Android (smartphones and tablets)
-Desktop: Windows, macOS, Linux
-Web Browsers: Chrome, Firefox, Safari, Edge (for WebXR experiences)
-VR Headsets: Oculus Quest, HTC Vive, PlayStation VR, Valve Index
-AR Devices: HoloLens, Magic Leap, ARKit/ARCore-enabled devices
-Specialized Hardware: Custom installation hardware, sensors, displays, projectors (for projection mapping), audio systems
+**Mobile:** iOS, Android (smartphones and tablets)
+**Desktop:** Windows, macOS, Linux
+**Web Browsers:** Chrome, Firefox, Safari, Edge (for WebXR experiences)
+**VR Headsets:** Oculus Quest, HTC Vive, PlayStation VR, Valve Index
+**AR Devices:** HoloLens, Magic Leap, ARKit/ARCore-enabled devices
+**Specialized Hardware:** Custom installation hardware, sensors, displays, projectors (for projection mapping), audio systems
 
- Template: Platform Requirements
+### Template: Platform Requirements
 
 Primary Target Platform(s):`[List your main platforms, e.g., "iOS and Android mobile devices"]`
 
@@ -104,7 +104,7 @@ Browser/Engine Requirements (for web projects):`[e.g., "Chrome 90+, Firefox 88+,
 
 Distribution Method:`[e.g., "App Store for iOS, Google Play for Android", "Web hosting", "Direct distribution"]`
 
- Example: Projection Mapping Installation
+### Example: Projection Mapping Installation
 
 Primary Target Platform(s): Windows desktop with dedicated GPU
 
@@ -123,28 +123,29 @@ Distribution Method: Direct installation on dedicated hardware
 Additional Hardware: Projector(s), optional depth camera for dynamic mapping
 
 
- Tools & Software
+## Tools & Software
 
 The tools you choose affect development speed, team collaboration, and the capabilities available in your prototype.
 
- Types of Tools You'll Need
+### Types of Tools You'll Need
 
 Development Tools: Game engines, frameworks, IDEs where you'll build the project
 Design Tools: Software for creating 3D models, textures, UI elements
 Content Creation Tools: Tools for audio, video, and other media assets
 Build & Deployment Tools: Software for compiling, packaging, and distributing your project
 
- How Tools Work Together
+### How Tools Work Together
 
 Most projects use a tool pipeline where different tools handle different tasks:
 1. Design tools create assets (3D models, textures, audio)
 2. Development tools integrate assets and code
 3. Build tools package everything for distribution
 
-Common Primary Tools:- TouchDesigner - Node-based visual programming environment, popular for real-time graphics, projection mapping, interactive installations, and data visualization
-- Unity - Game engine widely used for games, AR, VR, and interactive experiences
+**Common Primary Tools:**
+- **TouchDesigner** - Node-based visual programming environment, popular for real-time graphics, projection mapping, interactive installations, and data visualization
+- **Unity** - Game engine widely used for games, AR, VR, and interactive experiences
 
- Template: Tools & Software
+### Template: Tools & Software
 
 Primary Development Tool/Engine:`[e.g., "TouchDesigner 2023", "Unity 2021.3 LTS", "Unreal Engine 5", "Three.js"]`
 
@@ -164,7 +165,7 @@ Build & Deployment Tools:`[e.g., "Xcode (for iOS)", "Android Studio (for Android
 
 Version Control:`[e.g., "Git", "Perforce"]`
 
- Example: Unity-Based Project
+### Example: Unity-Based Project
 
 Primary Development Tool/Engine: Unity 2021.3 LTS
 
@@ -186,7 +187,7 @@ Build & Deployment Tools: Xcode (iOS), Android Studio (Android)
 
 Version Control: Git with GitHub
 
- Example: TouchDesigner-Based Project
+### Example: TouchDesigner-Based Project
 
 Primary Development Tool/Engine: TouchDesigner 2023
 
@@ -209,11 +210,11 @@ Build & Deployment Tools: TouchDesigner runtime, custom executables
 Version Control: Git with GitHub
 
 
- APIs & Services
+## APIs & Services
 
 APIs (Application Programming Interfaces) and services connect your project to external functionality, data, or cloud services.
 
- What Are APIs and Services?
+### What Are APIs and Services?
 
 APIs are interfaces that let your project communicate with external systems or access device features. Examples: location services, social media login, payment processing.
 
@@ -221,7 +222,7 @@ Third-party services are cloud-based tools that provide functionality without bu
 
 Platform-specific APIs are built into the platform itself. Examples: ARKit (iOS), ARCore (Android), WebXR (web browsers).
 
- When Do You Need Them?
+### When Do You Need Them?
 
 You'll need APIs/services if your project:
 - Accesses device features (camera, GPS, sensors)
@@ -229,9 +230,11 @@ You'll need APIs/services if your project:
 - Integrates with other services (social media, payment systems)
 - Tracks usage or analytics
 
- Template: APIs & Services
+### Template: APIs & Services
 
-External APIs:API Name: `[e.g., "Google Maps API"]`
+**External APIs:**
+
+API Name: `[e.g., "Google Maps API"]`
 - Purpose: `[What it's used for]`
 - Authentication: `[e.g., "API key", "OAuth"]`
 - Data Format: `[e.g., "JSON"]`
@@ -252,11 +255,13 @@ VR Frameworks: `[e.g., "OpenXR", "Oculus SDK", "SteamVR"]`
 
 Device APIs: `[e.g., "Camera API", "GPS/Location API", "Haptic Feedback API"]`
 
-Data Sources:Data Type: `[e.g., "User location data", "Product catalog", "Media assets"]`
+**Data Sources:**
+
+Data Type: `[e.g., "User location data", "Product catalog", "Media assets"]`
 - Source: `[e.g., "Internal database", "External API", "Local storage"]`
 - Update Frequency: `[e.g., "Real-time", "Daily batch update", "On-demand"]`
 
- Example: Data Visualization Project
+### Example: Data Visualization Project
 
 External APIs:
 
@@ -290,23 +295,23 @@ Data Type: Historical data (for trends)
 - Update Frequency: Daily batch import
 
 
- Technical Architecture
+## Technical Architecture
 
 Architecture describes how the different parts of your system work together. Understanding this helps identify complexity and technical challenges.
 
- Why Architecture Matters
+### Why Architecture Matters
 
 Simple architecture = easier to build and scope
 Complex architecture = more development time and potential challenges
 
- Common Architecture Types
+### Common Architecture Types
 
-Standalone: Everything runs on one device, no internet required
-Client-Server: Your project (client) communicates with a server for data or processing
-Peer-to-Peer: Multiple instances of your project communicate directly with each other
-Hybrid: Combination of standalone and connected features
+**Standalone:** Everything runs on one device, no internet required
+**Client-Server:** Your project (client) communicates with a server for data or processing
+**Peer-to-Peer:** Multiple instances of your project communicate directly with each other
+**Hybrid:** Combination of standalone and connected features
 
- Template: Technical Architecture
+### Template: Technical Architecture
 
 System Type:`[e.g., "Standalone", "Client-Server", "Peer-to-Peer", "Hybrid"]`
 
@@ -326,7 +331,7 @@ Performance Requirements (if applicable):- Target Frame Rate: `[e.g., "60 FPS fo
 - Bandwidth Requirements: `[e.g., "5 Mbps for streaming content"]`
 - Concurrent Users: `[e.g., "Single user", "Up to 10 simultaneous users"]`
 
- Example: TouchDesigner-Based Visualizer
+### Example: TouchDesigner-Based Visualizer
 
 System Type: Standalone
 
@@ -363,24 +368,26 @@ Performance Requirements:
 - Concurrent Users: Single operator (public display)
 
 
- Dependencies & Constraints
+## Dependencies & Constraints
 
 Understanding dependencies and constraints helps identify potential blockers and compatibility issues before development starts.
 
- What Are Technical Dependencies?
+### What Are Technical Dependencies?
 
 Dependencies are libraries, frameworks, or SDKs that your project requires to function. They're like building blocks—your project won't work without them.
 
- Common Constraints to Consider
+### Common Constraints to Consider
 
-- Version constraints: Your project might only work with specific versions of software
-- Device compatibility: Not all devices support the same features
-- Network requirements: Some features need internet connectivity
-- Environment requirements: AR/VR projects might need specific physical conditions
+- **Version constraints:** Your project might only work with specific versions of software
+- **Device compatibility:** Not all devices support the same features
+- **Network requirements:** Some features need internet connectivity
+- **Environment requirements:** AR/VR projects might need specific physical conditions
 
- Template: Dependencies & Constraints
+### Template: Dependencies & Constraints
 
-Technical Dependencies:Dependency Name: `[e.g., "Unity AR Foundation"]`
+**Technical Dependencies:**
+
+Dependency Name: `[e.g., "Unity AR Foundation"]`
 - Version: `[e.g., "4.2.0"]`
 - Purpose: `[Why it's needed, e.g., "Provides cross-platform AR functionality"]`
 - Alternative Options: `[If applicable, e.g., "Could use platform-specific ARKit/ARCore directly"]`
@@ -395,11 +402,13 @@ Known Limitations:Limitation: `[e.g., "AR tracking requires well-lit environment
 - Workaround: `[If applicable, e.g., "Use artificial markers in low-light scenarios"]`
 
 [Repeat for each limitation]
-Compatibility Requirements:- Device Compatibility: `[e.g., "iPhone 8 or later", "Android devices with ARCore support"]`
+**Compatibility Requirements:**
+
+- Device Compatibility: `[e.g., "iPhone 8 or later", "Android devices with ARCore support"]`
 - Network Requirements: `[e.g., "Requires internet connection for initial setup", "Offline capable after setup"]`
 - Environment Requirements: `[e.g., "Minimum 2m x 2m space for room-scale VR", "Good lighting for AR tracking"]`
 
- Example: TouchDesigner Installation Constraints
+### Example: TouchDesigner Installation Constraints
 
 Technical Dependencies:
 
@@ -436,11 +445,11 @@ Compatibility Requirements:
 - Environment Requirements: Stable power supply, adequate cooling for extended operation
 
 
- Project Type Quick Tips
+## Project Type Quick Tips
 
 Different project types have different technical priorities. Use this section to quickly identify which requirements to focus on.
 
- Games
+### Games
 
 Priority Sections: Platform Requirements, Tools & Software, Technical Architecture, Dependencies & Constraints
 
@@ -453,9 +462,9 @@ Common Requirements:- [ ] Game engine (Unity, Unreal, etc.)
 
 Typical Tool Stack: Unity or Unreal Engine, with design tools (Blender, Photoshop) and audio tools (FMOD, Wwise)
 
- AR Projects
+### AR Projects
 
-Priority Sections: Platform Requirements, APIs & Services (platform-specific APIs), Dependencies & Constraints
+**Priority Sections:** Platform Requirements, APIs & Services (platform-specific APIs), Dependencies & Constraints
 
 Common Requirements:- [ ] AR framework (ARKit, ARCore, or AR Foundation)
 - [ ] Device camera access
@@ -466,9 +475,9 @@ Common Requirements:- [ ] AR framework (ARKit, ARCore, or AR Foundation)
 
 Typical Tool Stack: Unity with AR Foundation, or native development with ARKit/ARCore SDKs
 
- VR Projects
+### VR Projects
 
-Priority Sections: Platform Requirements, Tools & Software, Technical Architecture, Dependencies & Constraints
+**Priority Sections:** Platform Requirements, Tools & Software, Technical Architecture, Dependencies & Constraints
 
 Common Requirements:- [ ] VR headset compatibility (Oculus, HTC Vive, etc.)
 - [ ] VR input methods (controllers, hand tracking)
@@ -478,9 +487,9 @@ Common Requirements:- [ ] VR headset compatibility (Oculus, HTC Vive, etc.)
 
 Typical Tool Stack: Unity or Unreal Engine with VR SDK (Oculus SDK, OpenXR, SteamVR)
 
- Projection Mapping
+### Projection Mapping
 
-Priority Sections: Tools & Software, Technical Architecture, Dependencies & Constraints
+**Priority Sections:** Tools & Software, Technical Architecture, Dependencies & Constraints
 
 Common Requirements:- [ ] Projector calibration and mapping software
 - [ ] Real-time rendering performance
@@ -491,9 +500,9 @@ Common Requirements:- [ ] Projector calibration and mapping software
 
 Typical Tool Stack: TouchDesigner, MadMapper, Resolume, or custom software with projection mapping tools
 
- Installation Art
+### Installation Art
 
-Priority Sections: Platform Requirements, Tools & Software, Technical Architecture, Dependencies & Constraints
+**Priority Sections:** Platform Requirements, Tools & Software, Technical Architecture, Dependencies & Constraints
 
 Common Requirements:- [ ] Hardware integration (sensors, displays, custom controllers, projectors)
 - [ ] Multi-device coordination (if applicable)
@@ -504,9 +513,9 @@ Common Requirements:- [ ] Hardware integration (sensors, displays, custom contro
 
 Typical Tool Stack: TouchDesigner, Unity, or custom software depending on hardware requirements
 
- Data Visualization
+### Data Visualization
 
-Priority Sections: APIs & Services, Technical Architecture, Tools & Software
+**Priority Sections:** APIs & Services, Technical Architecture, Tools & Software
 
 Common Requirements:- [ ] Data source integration (APIs, databases, files)
 - [ ] Real-time data processing
@@ -517,9 +526,9 @@ Common Requirements:- [ ] Data source integration (APIs, databases, files)
 
 Typical Tool Stack: TouchDesigner, Unity, Processing, or web-based tools (D3.js, Three.js) depending on complexity
 
- Embodied Interaction
+### Embodied Interaction
 
-Priority Sections: Platform Requirements, APIs & Services, Technical Architecture
+**Priority Sections:** Platform Requirements, APIs & Services, Technical Architecture
 
 Common Requirements:- [ ] Motion tracking (camera-based, sensors, depth cameras)
 - [ ] Body tracking systems (Kinect, Intel RealSense, etc.)
@@ -529,9 +538,9 @@ Common Requirements:- [ ] Motion tracking (camera-based, sensors, depth cameras)
 
 Typical Tool Stack: TouchDesigner, Unity with motion tracking plugins, or custom software with depth cameras
 
- Sound-Based Immersion
+### Sound-Based Immersion
 
-Priority Sections: Tools & Software, APIs & Services, Technical Architecture
+**Priority Sections:** Tools & Software, APIs & Services, Technical Architecture
 
 Common Requirements:- [ ] Audio input processing (microphones, audio interfaces)
 - [ ] Real-time audio analysis (FFT, beat detection, etc.)
@@ -541,9 +550,9 @@ Common Requirements:- [ ] Audio input processing (microphones, audio interfaces)
 
 Typical Tool Stack: TouchDesigner, Max/MSP, Pure Data, Unity with audio plugins, or Ableton Live with visualizers
 
- Simulation
+### Simulation
 
-Priority Sections: Technical Architecture, Tools & Software, Dependencies & Constraints
+**Priority Sections:** Technical Architecture, Tools & Software, Dependencies & Constraints
 
 Common Requirements:- [ ] Physics engine (if applicable)
 - [ ] Real-time computation capabilities
@@ -553,9 +562,9 @@ Common Requirements:- [ ] Physics engine (if applicable)
 
 Typical Tool Stack: Unity, Unreal Engine, or specialized simulation software depending on simulation type
 
- Visualizers
+### Visualizers
 
-Priority Sections: Tools & Software, Technical Architecture, APIs & Services
+**Priority Sections:** Tools & Software, Technical Architecture, APIs & Services
 
 Common Requirements:- [ ] Real-time rendering engine
 - [ ] Audio input or data input
@@ -566,11 +575,11 @@ Common Requirements:- [ ] Real-time rendering engine
 Typical Tool Stack: TouchDesigner, Processing, Unity, or custom software with audio analysis libraries
 
 
- Template Summary
+## Template Summary
 
 Use this section to quickly copy all template prompts into a single document for your project.
 
- Complete Template
+### Complete Template
 
 Project Name: `[Your project name here]`
 
@@ -579,9 +588,10 @@ Brief Description: `[1-2 sentences describing what your project does]`
 Project Type: `[Games, AR, VR, Projection Mapping, Installation Art, Data Visualization, Embodied Interaction, Sound-Based Immersion, Simulation, Visualizers, etc.]`
 
 
- Platform Requirements
+#### Platform Requirements
 
-Primary Target Platform(s):`[List your main platforms]`
+Primary Target Platform(s):
+`[List your main platforms]`
 
 Secondary/Supported Platforms (if applicable):`[List any additional platforms]`
 
@@ -595,9 +605,10 @@ Browser/Engine Requirements (for web projects):`[Browser and version requirement
 Distribution Method:`[How users will access your project]`
 
 
- Tools & Software
+#### Tools & Software
 
-Primary Development Tool/Engine:`[Your main development tool]`
+Primary Development Tool/Engine:
+`[Your main development tool]`
 
 Engine/Framework Version:`[Specific version]`
 
@@ -616,9 +627,11 @@ Build & Deployment Tools:`[Build and deployment tools]`
 Version Control:`[Version control system]`
 
 
- APIs & Services
+#### APIs & Services
 
-External APIs:API Name: `[API name]`
+External APIs:
+
+API Name: `[API name]`
 - Purpose: `[What it's used for]`
 - Authentication: `[Authentication method]`
 - Data Format: `[Data format]`
@@ -860,9 +873,9 @@ Compatibility Requirements:
 - Environment Requirements: Stable power supply, adequate cooling, projector calibration space
 
 
- Resources
+## Resources
 
- Platform Documentation
+### Platform Documentation
 
 AR Platforms:- [Apple ARKit Documentation](https://developer.apple.com/documentation/arkit)
 - [Google ARCore Documentation](https://developers.google.com/ar)
@@ -877,7 +890,7 @@ Web-Based Immersive:- [WebXR Device API](https://www.w3.org/TR/webxr/)
 - [A-Frame Documentation](https://aframe.io/docs/)
 - [Babylon.js Documentation](https://doc.babylonjs.com/)
 
- Development Tools
+### Development Tools
 
 Primary Tools:- [TouchDesigner Documentation](https://docs.derivative.ca/)
 - [TouchDesigner Wiki](https://docs.derivative.ca/UserGuide)
@@ -892,7 +905,7 @@ Web Frameworks:- [Three.js](https://threejs.org/)
 - [A-Frame](https://aframe.io/)
 - [Babylon.js](https://www.babylonjs.com/)
 
- Community Resources
+### Community Resources
 
 TouchDesigner:- [TouchDesigner Forum](https://forum.derivative.ca/)
 - [TouchDesigner Discord](https://discord.gg/derivative)
@@ -906,7 +919,7 @@ General:- [Unreal Engine Forums](https://forums.unrealengine.com/)
 - [Stack Overflow - AR/VR Tags](https://stackoverflow.com/questions/tagged/augmented-reality)
 - [Stack Overflow - TouchDesigner](https://stackoverflow.com/questions/tagged/touchdesigner)
 
- Additional Learning
+### Additional Learning
 
 TouchDesigner:- [TouchDesigner Tutorials](https://docs.derivative.ca/Tutorials)
 - [Bileam Tschepe's TouchDesigner Tutorials](https://www.youtube.com/c/bileamtschepe)
